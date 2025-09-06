@@ -20,6 +20,6 @@ export interface Page<Contents> {
 // }
 
 export const S_coursesAPI = {
-  list: (ids: string): Promise<Page<Contents>> => http.get(`/api/scourses/${ids}`),
-  create: (payload: unknown) => http.post("/api/scourses", payload),
+  list: (ids: string): Promise<Page<Contents>> => http.get(`api/scourses/${ids}`),
+  create: (payload: unknown) => http.post("api/scourses", payload),
 };

@@ -23,5 +23,5 @@ export interface Myclass<T> {
 }
 
 export const ClassesAPI = {
-    list: (page=0, size=10, q=""): Promise<Myclass<Classes>> => http.get(`/api/classes`),
+    list: (page=0, size=10, q=""): Promise<Myclass<Classes>> => http.get(`api/classes`),
 }
