@@ -17,8 +17,8 @@ export interface Page<T> {
 }
 
 export const CoursesAPI = {
-    list: (page=0, size=10, q=""): Promise<Page<Courses>> => http.get(`api/courses`),
-    create: (payload: Partial<Courses>) => http.post("api/courses", payload),
-    update: (id: string, payload: Partial<Courses>) => http.patch(`api/courses/${id}`, payload),
-    remove: (id: string) => http.del(`api/courses/${id}`),
+    list: (page=0, size=10, q=""): Promise<Page<Courses>> => http.get(`/api/courses`),
+    create: (payload: Partial<Courses>) => http.post("/api/courses", payload),
+    update: (id: string, payload: Partial<Courses>) => http.patch(`/api/courses/${id}`, payload),
+    remove: (id: string) => http.del(`/api/courses/${id}`),
 }
