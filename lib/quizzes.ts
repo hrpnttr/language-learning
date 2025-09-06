@@ -29,6 +29,6 @@ export interface Page<T> {
 }
 
 export const QuizzesAPI = {
-    list: (page=0, size=10, q=""): Promise<Page<Quizzes>> => http.get(`/api/quizzes`),
+    list: (page=0, size=10, q=""): Promise<Page<Quizzes>> => http.get(`api/quizzes`),
     test: (id: string): Promise<Quizzes> => http.get(`/api/quizzes/by-id?id=${encodeURIComponent(id)}`),
 }
